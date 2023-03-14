@@ -1,9 +1,7 @@
-function App() {
-	return (
-		<div className="App">
-			<h1>This is Vite React</h1>
-		</div>
-	);
-}
+import React from "react";
+
+const App = () => {
+	return <div>App</div>;
+};
 
 export default App;
