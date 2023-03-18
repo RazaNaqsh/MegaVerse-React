@@ -9,16 +9,20 @@ const Hero = () => {
 				<h1 className="text-white text-[144px] leading-[158px] font-bold text-center">
 					MA
 				</h1>
+
 				<div className="h-[100px] w-[190px] border-l-[15px] border-t-[17px] border-b-[17px] border-r-[15px] rounded-r-full mb-1"></div>
 				<h1 className="text-white text-[144px] leading-[158px] font-bold text-center">
 					NESS
 				</h1>
 			</div>
-			<img
-				src={cover}
-				alt=""
-				className="w-full m-auto h-[478px] object-cover rounded-tl-[150px] rounded-tr-none"
-			/>
+			<div className="relative">
+				<div className="absolute w-full h-[300px] z-0 hero-gradient -top-[29px] rounded-tl-[130px]" />
+				<img
+					src={cover}
+					alt=""
+					className="w-full m-auto h-[478px] object-cover rounded-tl-[150px] rounded-tr-none z-10 relative"
+				/>
+			</div>
 		</section>
 	);
 };

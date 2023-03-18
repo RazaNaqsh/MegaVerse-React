@@ -2,8 +2,8 @@ import search from "../assets/search.svg";
 import menu from "../assets/menu.svg";
 const Navbar = () => {
 	return (
-		<nav className="relative flex justify-between items-center  h-24">
-			<div className="absolute " />
+		<nav className="relative flex justify-between items-center  h-24 ">
+			<div className="absolute w-[50%] inset-0 gradient-01" />
 			<img
 				src={search}
 				alt="search"
