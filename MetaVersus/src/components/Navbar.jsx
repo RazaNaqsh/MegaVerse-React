@@ -11,17 +11,35 @@ const Navbar = () => {
 			animate={{ y: -10 }}
 			transition={{ type: "spring", delay: 0.2, stiffness: 120 }}
 		>
-			<div className="absolute w-[50%] inset-0 gradient-01" />
-			<img
+			<div className="absolute w-[50%] inset-0 gradient-01 -z-10" />
+			<motion.img
 				src={search}
 				alt="search"
-				className="h-[24px] w-[24px] object-contain"
+				className="h-[24px] w-[24px] object-contain cursor-pointer"
+				whileHover={{
+					scale: 1.3,
+					originX: 0,
+					color: "#f8e112",
+				}}
+				transition={{
+					type: "spring",
+					stiffness: 300,
+				}}
 			/>
 			<h2 className="text-white text-2xl font-medium">METAVERSUS</h2>
-			<img
+			<motion.img
 				src={menu}
 				alt="menu"
-				className="h-[24px] w-[24px] object-contain"
+				className="h-[24px] w-[24px] object-contain cursor-pointer "
+				whileHover={{
+					scale: 1.3,
+					originX: 0,
+					color: "#f8e112",
+				}}
+				transition={{
+					type: "spring",
+					stiffness: 300,
+				}}
 			/>
 		</motion.nav>
 	);
