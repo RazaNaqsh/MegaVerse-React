@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
+
 import search from "../assets/search.svg";
 import menu from "../assets/menu.svg";
+
 const Navbar = () => {
 	return (
-		<nav className="relative flex justify-between items-center  h-24 ">
+		<motion.nav
+			className="relative flex justify-between items-center  h-24 "
+			initial={{ y: -250 }}
+			animate={{ y: -10 }}
+			transition={{ type: "spring", delay: 0.2, stiffness: 120 }}
+		>
 			<div className="absolute w-[50%] inset-0 gradient-01" />
 			<img
 				src={search}
@@ -15,7 +23,7 @@ const Navbar = () => {
 				alt="menu"
 				className="h-[24px] w-[24px] object-contain"
 			/>
-		</nav>
+		</motion.nav>
 	);
 };
 
