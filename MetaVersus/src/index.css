@@ -39,3 +39,43 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 } */
+
+.color-show {
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: gradient-animation 10s ease-in-out fowards infinite;
+	animation: gradient-animation 10s ease-in-out forwards infinite;
+	background: linear-gradient(
+		300deg,
+		#ffee07,
+		#ff2b6a,
+		#ab4bff,
+		#5ca2ff,
+		#df1700
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 360% 360%;
+}
+@keyframes gradient-animation {
+	0% {
+		background-size: 80% 80%;
+	}
+	30% {
+		background-size: 120% 140%;
+	}
+	45% {
+		background-size: 240% 240%;
+	}
+	60% {
+		background-size: 180% 180%;
+	}
+	70% {
+		background-size: 80% 80%;
+	}
+	85% {
+		background-size: 90% 90%;
+	}
+	100% {
+		background-size: 100% 100%;
+	}
+}

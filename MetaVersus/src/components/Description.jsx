@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Description = () => {
 	return (
 		<motion.section
-			className="w-[60vw] m-auto mt-36 text-center"
+			className="w-[60vw] m-auto my-36 text-center"
 			initial={{ opacity: 0, x: -200 }}
 			whileInView={{ opacity: 1, x: 0 }}
 			viewport={{ once: false }}
@@ -23,9 +23,11 @@ const Description = () => {
 				all of my other project put into one place to show off my{" "}
 				<span className="font-sans font-light">FrontEnd Skills</span>. This
 				helps me integrate everything ive done into one Mega project, thus I
-				named it MegaVerse. Ive used everything ive learn in React till date
-				into this project, and I plan to integrate other things as well in the
-				future as I learn more !
+				named it <span className="font-sans font-light">MegaVerse</span>. Ive
+				used everything ive learn in{" "}
+				<span className="font-sans font-light">React</span> till date into this
+				project, and I plan to integrate other things as well in the future as I
+				learn more !
 			</p>
 		</motion.section>
 	);

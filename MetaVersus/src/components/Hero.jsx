@@ -25,7 +25,7 @@ const Hero = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ delay: 1, duration: 1 }}
-				className="text-gradient"
+				className="text-gradient color-show"
 			>
 				<h1 className="text-white text-[144px] leading-[120px] font-bold text-center ">
 					MEGAVERSE

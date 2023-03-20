@@ -1,6 +1,9 @@
 import Description from "./components/Description";
+import Explore from "./components/Explore";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Stack from "./components/Stack";
 
 function App() {
 	return (
@@ -8,6 +11,9 @@ function App() {
 			<Navbar />
 			<Hero />
 			<Description />
+			<Stack />
+			<Explore />
+			<Footer />
 		</div>
 	);
 }
