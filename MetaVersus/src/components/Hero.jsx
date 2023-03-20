@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import cover from "../assets/cover.png";
+import cover from "../assets/svg-icons/cover.png";
 
 const containerVariants = {
 	hidden: {

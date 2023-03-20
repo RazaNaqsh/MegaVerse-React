@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-	font-family: "Eudoxus Sans", sans-serif;
+	font-family: sans-serif;
 	/* font-family: "Poppins", sans-serif; */
 }
 body {
@@ -42,8 +42,8 @@ body {
 
 .color-show {
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: gradient-animation 10s ease-in-out fowards infinite;
-	animation: gradient-animation 10s ease-in-out forwards infinite;
+	-webkit-animation: gradient-animation 20s ease-in-out fowards infinite;
+	animation: gradient-animation 20s ease-in-out forwards infinite;
 	background: linear-gradient(
 		300deg,
 		#ffee07,

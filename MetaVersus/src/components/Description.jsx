@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Description = () => {
 	return (
 		<motion.section
-			className="w-[60vw] m-auto my-36 text-center"
+			className="w-[60vw] m-auto my-36 py-36 text-center"
 			initial={{ opacity: 0, x: -200 }}
 			whileInView={{ opacity: 1, x: 0 }}
 			viewport={{ once: false }}
@@ -15,7 +15,7 @@ const Description = () => {
 				duration: 0.4,
 			}}
 		>
-			<h1 className="font-sans font-light">|About MegaVersus</h1>
+			<h1 className="font-sans font-light">| About MegaVersus</h1>
 			<p className="mt-4 text-4xl leading-tight font-sans  font-thin">
 				<span className="font-sans font-light">MegaVerse</span> is my personal
 				project which is a{" "}
