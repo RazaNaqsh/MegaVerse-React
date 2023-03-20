@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Explore = () => {
 	return (
 		<motion.section
-			className="py-20 mt-36 w-full text-center"
+			className="py-20 my-36 w-full text-center"
 			initial={{ opacity: 0, x: 200 }}
 			whileInView={{ opacity: 1, x: 0 }}
 			viewport={{ once: false }}

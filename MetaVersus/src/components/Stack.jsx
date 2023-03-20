@@ -8,7 +8,7 @@ const Stack = () => {
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ type: "spring", duration: 2, bounce: 0.4, delay: 0.8 }}
 		>
-			<h1 className="font-sans font-light text-2xl">
+			<h1 className="font-sans font-light text-3xl">
 				Technologies I use to Turn my Ideas into Reality
 			</h1>
 			<div className="bg-[#334155] my-8 p-8">Tech stack goes in here</div>
