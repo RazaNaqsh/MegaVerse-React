@@ -1,4 +1,5 @@
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import logos from "../assets/svg-pl/langIcons";
 
 const Stack = () => {
 	return (
@@ -11,7 +12,19 @@ const Stack = () => {
 			<h1 className="font-sans font-light text-3xl">
 				Technologies I use to Turn my Ideas into Reality
 			</h1>
-			<div className="bg-[#334155] my-8 p-8">Tech stack goes in here</div>
+			<div className="bg-[#334155] my-8 p-8 flex justify-around">
+				{logos.map((logo) => (
+					<motion.div
+						whileHover={{ scale: 1.1 }}
+						transition={{ type: "spring", damping: 5, stiffness: 100 }}
+					>
+						<img
+							src={logo}
+							className="h-[80px] w-[80px] object-contain"
+						/>
+					</motion.div>
+				))}
+			</div>
 		</motion.section>
 	);
 };
