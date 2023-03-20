@@ -4,16 +4,16 @@ import cover from "../assets/svg-icons/cover.png";
 const containerVariants = {
 	hidden: {
 		opacity: 0,
-		x: "100vw",
+		x: "80vw",
 	},
 	visible: {
 		opacity: 1,
 		x: 0,
 		transition: {
 			type: "spring",
-			delay: 1,
-			mass: 1,
-			damping: 14,
+			delay: 1.5,
+			mass: 0.8,
+			damping: 10,
 		},
 	},
 };
@@ -23,7 +23,7 @@ const Hero = () => {
 		<section className="pt-24">
 			<motion.div
 				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
+				whileInView={{ opacity: 1 }}
 				transition={{ delay: 1, duration: 1 }}
 				className="text-gradient color-show"
 			>
@@ -45,7 +45,7 @@ const Hero = () => {
 				className="relative"
 				variants={containerVariants}
 				initial="hidden"
-				animate="visible"
+				whileInView="visible"
 			>
 				<div className="absolute w-full h-[300px] z-0 hero-gradient -top-[29px] rounded-tl-[130px]" />
 				<img
