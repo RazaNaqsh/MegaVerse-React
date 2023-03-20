@@ -28,7 +28,7 @@ const Hero = () => {
 				className="text-gradient"
 			>
 				<h1 className="text-white text-[144px] leading-[120px] font-bold text-center ">
-					METAVERSE
+					MEGAVERSE
 				</h1>
 				<div className="flex justify-center items-center">
 					<h1 className="text-white text-[144px] leading-[158px] font-bold text-center ">

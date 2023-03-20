@@ -26,7 +26,7 @@ const Navbar = () => {
 					stiffness: 300,
 				}}
 			/>
-			<h2 className="text-white text-2xl font-medium">METAVERSUS</h2>
+			<h2 className="text-white text-2xl font-medium">MEGAVERSE</h2>
 			<motion.img
 				src={menu}
 				alt="menu"
