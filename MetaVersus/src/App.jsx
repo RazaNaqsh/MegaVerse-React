@@ -6,7 +6,7 @@ import Project from "./pages/Project";
 
 function App() {
 	return (
-		<div className="bg-[#1A232E] px-28 text-white ">
+		<div className="bg-[#1A232E] px-28 text-white min-h-screen ">
 			<Navbar />
 			<Routes>
 				<Route

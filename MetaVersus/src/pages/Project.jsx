@@ -1,8 +1,50 @@
+import { motion } from "framer-motion";
+
 const Project = () => {
 	return (
-		<section>
+		<motion.section
+			className="bg-[#333] rounded-xl p-8 space-y-20"
+			initial={{ y: "-100vw" }}
+			animate={{ y: 0 }}
+			transition={{ type: "spring", duration: 2.25, bounce: 0.2 }}
+		>
 			<h1>This is Project section</h1>
-		</section>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				dignissimos officia accusamus voluptatem, deserunt recusandae ea error
+				tempore dolorum veritatis?
+			</p>
+		</motion.section>
 	);
 };
 
