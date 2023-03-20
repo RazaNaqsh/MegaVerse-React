@@ -8,15 +8,17 @@ import { mdiInformation } from "@mdi/js";
 const Navbar = () => {
 	return (
 		<motion.nav
-			className="relative flex justify-between items-center  h-24 "
-			initial={{ y: -250 }}
-			animate={{ y: -10 }}
-			transition={{ type: "spring", delay: 0.2, stiffness: 120 }}
+			className="relative flex justify-between items-center  h-24 z-0 "
+			initial={{ opacity: 0, y: -20 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ type: "spring", delay: 0.3, stiffness: 120 }}
+			viewport={{ once: false }}
 		>
 			<div className="absolute w-[50%] inset-0 gradient-01 -z-10" />
 
 			<Link to="/">
 				<motion.p
+					className="z-10"
 					whileHover={{
 						scale: 1.3,
 						origin: 0,
