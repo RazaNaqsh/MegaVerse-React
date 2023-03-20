@@ -22,9 +22,9 @@ const Hero = () => {
 	return (
 		<section className="pt-24">
 			<motion.div
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				transition={{ delay: 1, duration: 1 }}
+				initial={{ opacity: 0, x: -100 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ delay: 1, duration: 0.9 }}
 				className="text-gradient color-show"
 			>
 				<h1 className="text-white text-[144px] leading-[120px] font-bold text-center ">
