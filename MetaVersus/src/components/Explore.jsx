@@ -23,7 +23,7 @@ const Explore = () => {
 				className="mt-10 font-light font-sans text-8xl cursor-pointer"
 				// initial={{ opacity: 0, y: -200 }}
 				// whileInView={{ opacity: 1, y: 0 }}
-				whileHover={{ scale: 1.1 }}
+				whileHover={{ scale: 1.1, textShadow: "0px 0px 8px rgb(0,100,255)" }}
 				whileTap={{ scale: 0.9 }}
 				transition={{
 					type: "spring",

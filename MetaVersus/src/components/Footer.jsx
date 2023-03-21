@@ -10,21 +10,21 @@ const Footer = () => {
 		>
 			<section className="flex flex-col gap-5">
 				<p>About</p>
-				<p>About</p>
-				<p>About</p>
-				<p>About</p>
+				<p>TBD</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
 			</section>
 			<section className="flex flex-col gap-5">
-				<p>About</p>
-				<p>About</p>
-				<p>About</p>
-				<p>About</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
 			</section>
 			<section className="flex flex-col gap-5">
-				<p>About</p>
-				<p>About</p>
-				<p>About</p>
-				<p>About</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
+				<p>FOOTER</p>
 			</section>
 		</motion.footer>
 	);
