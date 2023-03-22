@@ -1,7 +1,22 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 import cover from "../assets/svg-icons/cover.png";
 
 const containerVariants = {
+	hidden: {
+		opacity: 0,
+		x: -100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			delay: 1,
+			duration: 0.9,
+		},
+	},
+};
+const imgVariants = {
 	hidden: {
 		opacity: 0,
 		x: "80vw",
@@ -19,12 +34,17 @@ const containerVariants = {
 };
 
 const Hero = () => {
+	const [timer, setTimer] = useState(true);
+	function alterTimer() {
+		setTimer(false);
+	}
+	setTimeout(alterTimer, 5000);
 	return (
 		<section className="pt-24">
 			<motion.div
-				initial={{ opacity: 0, x: -100 }}
-				whileInView={{ opacity: 1, x: 0 }}
-				transition={{ delay: 1, duration: 0.9 }}
+				variants={containerVariants}
+				initial="hidden"
+				whileInView="visible"
 				className="text-gradient color-show"
 			>
 				<h1 className="text-white text-[144px] leading-[120px] font-bold text-center ">
@@ -43,7 +63,7 @@ const Hero = () => {
 			</motion.div>
 			<motion.div
 				className="relative"
-				variants={containerVariants}
+				variants={imgVariants}
 				initial="hidden"
 				whileInView="visible"
 			>

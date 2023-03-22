@@ -1,13 +1,33 @@
 import { motion } from "framer-motion";
 import logos from "../assets/svg-pl/langIcons";
 
+const variants = {
+	hidden: {
+		opacity: 0,
+		y: -125,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+
+		transition: { type: "spring", duration: 1.5, bounce: 0.4, delay: 0.8 },
+	},
+	hover: {
+		scale: 1.2,
+		transition: {
+			type: "spring",
+			damping: 10,
+			stiffness: 130,
+		},
+	},
+};
 const Stack = () => {
 	return (
 		<motion.section
 			className="w-[65vw] m-auto "
-			initial={{ opacity: 0, y: -100 }}
-			whileInView={{ opacity: 1, y: 0 }}
-			transition={{ type: "spring", duration: 2, bounce: 0.4, delay: 0.8 }}
+			variants={variants}
+			initial="hidden"
+			whileInView="visible"
 		>
 			<h1 className="font-sans font-light text-3xl">
 				Technologies I use to Turn my Ideas into Reality
@@ -15,8 +35,8 @@ const Stack = () => {
 			<div className="bg-[#334155] my-8 p-8 flex justify-around">
 				{logos.map((logo) => (
 					<motion.div
-						whileHover={{ scale: 1.1 }}
-						transition={{ type: "spring", damping: 5, stiffness: 100 }}
+						variants={variants}
+						whileHover="hover"
 					>
 						<img
 							src={logo}

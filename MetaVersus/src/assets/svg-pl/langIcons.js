@@ -4,5 +4,6 @@ import Js from "./javascript.svg";
 import React from "./react.svg";
 import Sass from "./sass.svg";
 import Tailwind from "./tailwindcss-icon.svg";
+import FM from "./framer-motion.svg";
 
-export default [Html, Css, Js, React, Sass, Tailwind];
+export default [Html, Css, Js, React, Sass, Tailwind, FM];
