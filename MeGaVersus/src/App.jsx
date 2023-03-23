@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="bg-[#1A232E] px-28 text-white min-h-screen ">
 			<Navbar />
-			<AnimatePresence>
+			<AnimatePresence mode="wait">
 				<Routes
 					location={location}
 					key={location.pathname}
