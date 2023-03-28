@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { nanoid } from "nanoid";
 import { projectData } from "../constants/projectData";
 
 const Variants = {
@@ -43,6 +44,7 @@ const Project = () => {
 						className="my-4 bg-[#475569] rounded-xl overflow-hidden"
 						variants={Variants}
 						whileHover="hover"
+						key={nanoid()}
 					>
 						<h1 className="text-center text-xl text-blue-200 font-sans font-light my-4 ">
 							{project.name}

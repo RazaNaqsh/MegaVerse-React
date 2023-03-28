@@ -1,4 +1,4 @@
-import { easeInOut, easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const exploreVariants = {
@@ -25,7 +25,7 @@ const exploreVariants = {
 		textShadow: "0px 0px 8px rgb(0,100,255)",
 		transition: {
 			type: "spring",
-			ease: easeOut,
+			ease: "easeOut",
 			damping: 10,
 			bounce: 0.4,
 		},
@@ -37,7 +37,7 @@ const exploreVariants = {
 		transition: {
 			duration: 1,
 			ease: "easeInOut",
-			repeat: Infinity,
+			repeat: "Infinity",
 		},
 	},
 };

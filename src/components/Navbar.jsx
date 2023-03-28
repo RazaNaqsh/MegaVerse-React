@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import Icon from "@mdi/react";
+import { Icon } from "@mdi/react";
 import { mdiHome } from "@mdi/js";
 import { mdiInformation } from "@mdi/js";
 

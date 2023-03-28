@@ -33,10 +33,11 @@ const Stack = () => {
 				Technologies I use to Turn my Ideas into Reality
 			</h1>
 			<div className="bg-[#334155] my-8 p-8 flex justify-around">
-				{logos.map((logo) => (
+				{logos.map((logo, index) => (
 					<motion.div
 						variants={variants}
 						whileHover="hover"
+						key={index}
 					>
 						<img
 							src={logo}

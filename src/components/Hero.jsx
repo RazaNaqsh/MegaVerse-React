@@ -1,5 +1,5 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+
 import cover from "../assets/svg-icons/cover.png";
 
 const containerVariants = {
@@ -34,11 +34,6 @@ const imgVariants = {
 };
 
 const Hero = () => {
-	const [timer, setTimer] = useState(true);
-	function alterTimer() {
-		setTimer(false);
-	}
-	setTimeout(alterTimer, 5000);
 	return (
 		<section className="pt-24">
 			<motion.div
