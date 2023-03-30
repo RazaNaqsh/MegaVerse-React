@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { nanoid } from "nanoid";
+import { Link } from "react-router-dom";
 import { projectData } from "../constants/projectData";
 
 const Variants = {
@@ -40,21 +41,23 @@ const Project = () => {
 		>
 			<div className="project-section flex flex-wrap gap-10  justify-around">
 				{projectData.map((project) => (
-					<motion.div
-						className="my-4 bg-[#475569] rounded-xl overflow-hidden"
-						variants={Variants}
-						whileHover="hover"
-						key={nanoid()}
-					>
-						<h1 className="text-center text-xl text-blue-200 font-sans font-light my-4 ">
-							{project.name}
-						</h1>
-						<img
-							src={project.imgSrc}
-							alt=""
-							className="h-[270px] w-[500px] object-cover"
-						/>
-					</motion.div>
+					<Link to={project.url}>
+						<motion.div
+							className="my-4 bg-[#475569] rounded-xl overflow-hidden"
+							variants={Variants}
+							whileHover="hover"
+							key={nanoid()}
+						>
+							<h1 className="text-center text-xl text-blue-200 font-sans font-light my-4 ">
+								{project.name}
+							</h1>
+							<img
+								src={project.imgSrc}
+								alt=""
+								className="h-[270px] w-[500px] object-cover"
+							/>
+						</motion.div>
+					</Link>
 				))}
 			</div>
 		</motion.section>
