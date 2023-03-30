@@ -1,6 +1,6 @@
 # MegaVerse
 
-This project is crafter using React, TailwindCss and Framer Motion.
+This project is crafted using React, TailwindCss and Framer Motion.
 
 It showcases my learnings of framer motion and acts as a showcase for my best
 projects as well.
