@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { nanoid } from "nanoid";
 import { Link } from "react-router-dom";
 import { projectData } from "../constants/projectData";
+import { useEffect } from "react";
 
 const Variants = {
 	initial: {
@@ -31,6 +32,9 @@ const Variants = {
 	},
 };
 const Project = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<motion.section
 			className="bg-[#334155] rounded-xl p-8 space-y-20"
